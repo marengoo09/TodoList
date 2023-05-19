@@ -1,0 +1,5 @@
+.drag-drop{
+    margin-top: 40px;
+    font-size: 1.25rem;
+    color: var(--todo-completed-text);
+}

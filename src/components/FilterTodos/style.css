@@ -1,0 +1,43 @@
+.filter-todos{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter-todos-item{
+    display: flex;
+    margin-top: 16px;
+}
+
+.filter-todos .filter{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Dark_Grayish_Blue);
+    cursor: pointer;
+}
+
+.filter-todos .filter::first-letter{
+    text-transform: uppercase;
+}
+.filter-todos .filter:hover{
+    color: var(--todo-item-text);
+}
+
+.filter-todos .active{
+    color: var(--bright_blue);
+    cursor: auto;
+}
+
+@media screen and (min-width: 800px){
+    .filter-todos{
+        display: flex;
+    }
+    .filter-todos-item{
+        display: none;
+    }
+
+    .filter-todos .filter{
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,67 @@
+.circle{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid var(--todo-circle);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.circle:hover:not(.circle-input):not(.circle-bg){
+    border: 1px solid transparent;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* .circle:hover::after{
+    position: absolute;
+    top: -4px; bottom: -4px;
+    right: -4px; left: -4px;
+    background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    content: '';
+    z-index: -1;
+    border-radius: 50%;
+} */
+
+.circle-input{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.circle-bg{
+    background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.circle-check{
+    width: 8px;
+    height: 8px;
+    background-image: url("./images/icon-check.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 800px){
+    .circle{
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+    }
+
+    .circle-input{
+        left: 20px;
+    }
+
+    .circle-check{
+        width: 10px;
+        height: 10px;
+    }
+    
+}
