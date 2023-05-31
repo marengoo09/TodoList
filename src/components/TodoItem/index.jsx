@@ -1,14 +1,13 @@
 import classNames from "classnames";
 import { Circle } from "../Circle";
 
+import "../../../public/images/icon-cross.svg";
 import "./style.css";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { useContext } from "react";
 import { TodoContext } from "../../contexts/todoContext";
 import { Draggable } from "react-beautiful-dnd";
-import { useState } from "react";
-import { useRef } from "react";
 import { useScrolling } from "../../hooks/useScrolling";
 
 export const TodoItem = ({ content, completed, id, index }) => {

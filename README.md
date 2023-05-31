@@ -1,45 +1,50 @@
 # ToDo List
 
-Este es un proyecto de ToDo List (lista de tareas) creado con Vite y desplegado en Vercel. Proporciona una interfaz simple y fácil de usar para gestionar tus tareas diarias.
+This is a ToDo List project created with Vite and deployed on Vercel. It provides a simple and user-friendly interface for managing your daily tasks.
 
-Puedes acceder al proyecto en vivo en [https://todo-list-marengoo09.vercel.app/](https://todo-list-marengoo09.vercel.app/).
+You can access the live project at [https://todo-list-marengoo09.vercel.app/](https://todo-list-marengoo09.vercel.app/).
 
-## Características
+## Features
 
-- Agrega nuevas tareas a la lista.
-- Marca las tareas completadas.
-- Elimina las tareas que ya no son necesarias.
-- Persistencia de datos en el almacenamiento local del navegador.
-- Interfaz de usuario intuitiva y fácil de usar.
+- Add new tasks to the list.
+- Mark tasks as completed.
+- Delete tasks that are no longer needed.
+- Data persistence in the browser's local storage.
+- Intuitive and easy-to-use user interface.
+- Support for dark and light themes.
 
-## Capturas de pantalla
+## Screenshots
 
-![Captura de pantalla 1](screenshot1.png)
-![Captura de pantalla 2](screenshot2.png)
+![Screenshot 1](screenshot1.png)
+![Screenshot 2](screenshot2.png)
 
-## Instalación y ejecución local
+## Installation and Local Development
 
-1. Clona este repositorio en tu máquina local:
+1. Clone this repository to your local machine:
 
    ```shell
    git clone https://github.com/marengoo09/todolist.git
    ```
 
-2. Accede al directorio del proyecto:
+2. Navigate to the project directory:
     ```shell
     cd todo-list
     ```
 
-3. Instala las dependencias del proyecto:
+3. Install the project dependencies:
 
     ```shell
     npm install
     ```
 
-4. Inicia el servidor de desarrollo:
+4. Start the development server:
 
     ```shell
     npm run dev
     ```
 
-5. Abre tu navegador web y visita http://localhost:5173 para ver la aplicación en ejecución.
+5. Open your web browser and visit http://localhost:5173 to see the application in action.
+
+## Credits
+
+This project is part of the challenges by [Frontend Mentor](https://www.frontendmentor.io/). Frontend Mentor provides coding challenges to improve front-end development skills.
