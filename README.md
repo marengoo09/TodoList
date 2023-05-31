@@ -15,8 +15,8 @@ You can access the live project at [https://todo-list-marengoo09.vercel.app/](ht
 
 ## Screenshots
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
+![Screenshot 1](https://prnt.sc/9ilOPGzL9RdR)
+![Screenshot 2](https://prnt.sc/STI0JEX4eGbh)
 
 ## Installation and Local Development
 
