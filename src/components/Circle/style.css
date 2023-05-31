@@ -12,21 +12,10 @@
 
 .circle:hover:not(.circle-input):not(.circle-bg){
     border: 1px solid transparent;
-    background-image: linear-gradient(white, white), 
-    linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));;
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+    background-image: linear-gradient(var(--todo-item-background), var(--todo-item-background)), linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
-
-/* .circle:hover::after{
-    position: absolute;
-    top: -4px; bottom: -4px;
-    right: -4px; left: -4px;
-    background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
-    content: '';
-    z-index: -1;
-    border-radius: 50%;
-} */
 
 .circle-input{
     position: absolute;

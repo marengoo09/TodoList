@@ -1,12 +1,10 @@
 import './style.css'
-export const Circle = ({completed, input, todos, setTodos, todoId}) => {
-    const classList = `circle ${completed ?'circle-bg':''} ${input?'circle-input':''}`
+export const Circle = ({input, id, completed, completeTodo}) => {
+    const classList = `circle ${completed ?'circle-bg':''} ${input ?'circle-input':''}`
+
     const handleClick = () => {
-        if(input) return;
-        const newTodos = [...todos]
-        const todoIndex = newTodos.findIndex(el=>el.id===todoId)
-        newTodos[todoIndex].completed=!newTodos[todoIndex].completed
-        setTodos(newTodos)
+        if(!id) return
+        completeTodo(id)
     }
     return (
         <div className={classList} onClick={handleClick}>

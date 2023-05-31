@@ -20,7 +20,7 @@
 .filter-todos .filter::first-letter{
     text-transform: uppercase;
 }
-.filter-todos .filter:hover{
+.filter-todos .filter:hover:not(.active){
     color: var(--todo-item-text);
 }
 

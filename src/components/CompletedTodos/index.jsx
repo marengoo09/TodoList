@@ -1,6 +1,9 @@
+import { useContext } from 'react';
 import { FilterTodos } from '../FilterTodos';
 import './style.css'
-export const CompletedTodos = ({todos,setTodos, filteredTodos, setFilteredTodos}) => {
+import { TodoContext } from '../../contexts/todoContext';
+export const CompletedTodos = () => {
+    const {todos,setTodos, filteredTodos, setFilteredTodos} = useContext(TodoContext)
     const itemLeft = filteredTodos.filter((item)=>!item.completed).length;
     const handleClick = () => {
         let newTodos = [...todos];

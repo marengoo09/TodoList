@@ -1,10 +1,8 @@
 :root{
   --bright_blue: hsl(220, 98%, 61%);
-  --Very_Light_Gray: hsl(0, 0%, 98%);
-  --Very_Light_Grayish_Blue: hsl(236, 33%, 92%);
-  --Light_Grayish_Blue: hsl(233, 11%, 84%);
+
   --Dark_Grayish_Blue: hsl(236, 9%, 61%);
-  --Very_Dark_Grayish_Blue: hsl(235, 19%, 35%);
+
   --main-background: hsl(0, 0%, 98%);
   --todo-item-background: #fff;
   --todo-item-text: #6e6e83;
@@ -13,14 +11,7 @@
   --todo-completed-text: hsl(236, 9%, 61%);
   --todo-border: var(--main-background);
   --todo-border-size: 2px;
-}
-
-body.theme-light{
-  --main-background: hsl(0, 0%, 98%);
-  --Very_Light_Grayish_Blue: hsl(236, 33%, 92%);
-  --Light_Grayish_Blue: hsl(233, 11%, 84%);
-  --Dark_Grayish_Blue: hsl(236, 9%, 61%);
-  --Very_Dark_Grayish_Blue: hsl(235, 19%, 35%);
+  --circle-bg: linear-gradient(var(--todo-item-background), var(--todo-item-background)), linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
 }
 
 body.theme-dark{
@@ -32,13 +23,6 @@ body.theme-dark{
   --todo-completed-text: hsl(236, 9%, 61%);
   --todo-border: var(--todo-circle);
   --todo-border-size: 1px;
-
-  --Very_Dark_Desaturated_Blue: hsl(235, 24%, 19%);
-  --Light_Grayish_Blue: hsl(234, 39%, 85%);
-  --Light_Grayish_Blue_hover: hsl(236, 33%, 92%);
-  --Dark_Grayish_Blue: hsl(234, 11%, 52%);
-  --Very_Dark_Grayish_Blue: hsl(233, 14%, 35%);
-  --Very_Dark_Grayish_Blue: hsl(237, 14%, 26%);
 }
 
 *{
@@ -57,4 +41,5 @@ body{
   font-size: 1.8rem;
   background-color: var(--main-background);
   user-select: none;
+  min-height: 100vh;
 }

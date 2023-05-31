@@ -1,28 +1,22 @@
+import { useContext, useState } from "react";
 import { Circle } from "../Circle";
 import "./style.css";
-export const AddTodo = ({ todos, setTodos, inputValue, setInputValue }) => {
+import { TodoContext } from "../../contexts/todoContext";
+export const AddTodo = () => {
+  const [inputValue, setInputValue] = useState('')
+  const { addTodo } = useContext(TodoContext)
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo();
-  };
-  const genId = () => {
-    return todos[todos.length-1]?.id + 1 || 1;
-  }
-  const addTodo = () => {
     if (inputValue == "") return;
-    const newTodos = [...todos];
-    newTodos.push({
-      id: genId(),
-      content: inputValue,
-      completed: false,
-    });
-    setTodos(newTodos)
+    addTodo(inputValue);
     setInputValue('')
   };
+  
   return (
     <form className="addTodo" onSubmit={handleSubmit}>
       <div>
-        <Circle input />
+        <Circle input/>
         <input
           className="todolist-item"
           type="text"
