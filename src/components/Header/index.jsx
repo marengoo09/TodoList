@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import "./style.css";
 
+import bg_mobile_light from '../../../public/images/bg-mobile-light.jpg';
+import bg_mobile_dark from '../../../public/images/bg-mobile-dark.jpg';
+import bg_desktop_light from '../../../public/images/bg-desktop-light.jpg';
+import bg_desktop_dark from '../../../public/images/bg-desktop-dark.jpg';
 import iconLight from '../../../public/images/icon-moon.svg'
 import iconDark from '../../../public/images/icon-sun.svg'
 import { ThemeContext } from "../../contexts/themeContext";
