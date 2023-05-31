@@ -3,18 +3,14 @@ import { FilterTodos } from '../FilterTodos';
 import './style.css'
 import { TodoContext } from '../../contexts/todoContext';
 export const CompletedTodos = () => {
-    const {todos,setTodos, filteredTodos, setFilteredTodos} = useContext(TodoContext)
-    const itemLeft = filteredTodos.filter((item)=>!item.completed).length;
-    const handleClick = () => {
-        let newTodos = [...todos];
-        newTodos = newTodos.filter(element=>!element.completed)
-        setTodos(newTodos);
-    }
+    const {todos, clearCompleted} = useContext(TodoContext)
+    const itemLeft = todos.filter((item)=>!item.completed).length;
+
     return (
         <div className="completed-todos todolist-item border-bottom"> 
-            <span>{itemLeft} items left</span>
-            <FilterTodos todos={todos} filteredTodos={filteredTodos} setFilteredTodos={setFilteredTodos}/>
-            <span onClick={handleClick}>Clear completed</span>
+            <span>{itemLeft} item/s left</span>
+            <FilterTodos />
+            <span onClick={clearCompleted}>Clear completed</span>
         </div>
     )
 }

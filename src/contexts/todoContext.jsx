@@ -30,6 +30,12 @@ function TodoProvider({ children }) {
     setTodos(newTodos);
   };
 
+  const clearCompleted = () => {
+    let newTodos = [...todos];
+    newTodos = newTodos.filter(element=>!element.completed)
+    setTodos(newTodos);
+  }
+
   const genId = (max,min) => Math.floor(Math.random() * (max - min + 1)) + min;
 
   const addTodo = (todoValue) => {
@@ -69,6 +75,7 @@ function TodoProvider({ children }) {
         addTodo,
         deleteTodo,
         changeTodos,
+        clearCompleted,
         filter,
         setFilter
       }}

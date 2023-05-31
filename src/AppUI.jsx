@@ -10,7 +10,7 @@ import { TodoContext } from "./contexts/todoContext";
 import { useContext } from "react";
 
 export const AppUI = () => {
-  const { loading, error, filteredTodos } = useContext(TodoContext);
+  const { loading, error, todos, filteredTodos, filter } = useContext(TodoContext);
   return (
     <Header>
       <AddTodo />
@@ -20,8 +20,8 @@ export const AppUI = () => {
 
         {error && <p>An error ocurred...</p>}
 
-        {!loading && filteredTodos.length === 0 && (
-          <TodoItem content={"Example..."}></TodoItem>
+        {!loading && todos.length === 0 && filter.value=='all' && (
+          <TodoItem content={"Create your first todo..."}></TodoItem>
         )}
 
         {filteredTodos &&
