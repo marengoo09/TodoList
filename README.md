@@ -1,6 +1,6 @@
 # ToDo List
 
-This is a ToDo List project created with Vite and deployed on Vercel. It provides a simple and user-friendly interface for managing your daily tasks.
+This is a ToDo List application created with React and Vite. It provides a simple and user-friendly interface for managing your daily tasks.
 
 You can access the live project at [https://todo-list-marengoo09.vercel.app/](https://todo-list-marengoo09.vercel.app/).
 
